@@ -1,0 +1,87 @@
+.barcode__container {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0 111px;
+}
+
+.barcode__container img{
+    width: 138px;
+    height: 138px;
+}
+
+.barcode__content {
+    max-width: 699px;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.barcode__content p{
+    text-align: start;
+}
+.text-one {
+    margin-bottom: 25px;
+    text-align: start;
+    color: #191D23;
+    font-weight: bold;
+}
+
+.text-two {
+    margin-bottom: 8px;
+    color: #4E4E4E;
+}
+
+.barcode__content button {
+    width: 178px;
+    height: 40px;
+    border-radius: 23px;
+    background-color: #6E64AC;
+    border: none;
+    margin-left: 14px;
+    color: #FFFFFF;
+}
+
+@media screen and (max-width:1050px) {
+    .barcode__container {
+        flex-direction: column;
+        padding: 0 111px;
+    }
+    .barcode__container img{
+        margin-bottom: 10px;
+    }
+    .barcode__content {
+        margin-left: 0
+       
+    }
+    .barcode__input-block{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .barcode__content button {
+        margin: 20px 0 ;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .barcode__container {
+        padding: 0 11px;
+    }
+    .barcode__input-block input{
+        width: 280px;
+    }
+    .barcode__container img, .barcode__input-block button, .barcode__input-block{
+        align-self: center;
+    }
+    .barcode__content p{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:300px) {
+  
+    .barcode__input-block input{
+        width: 230px;
+    }
+}

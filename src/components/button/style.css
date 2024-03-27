@@ -1,0 +1,16 @@
+.button{
+    width: 97px;
+    height: 40px;
+    border-radius: 33px;
+    color: #6E64AC;
+   border: 1px solid #E7EAEE;
+    background-color: inherit;
+    transition: 0.5s;
+    padding: 10px 24px;  
+}
+
+.button:hover{
+ color: #E7EAEE;
+    background-color: #6E64AC;
+    transition: 0.5s;
+}

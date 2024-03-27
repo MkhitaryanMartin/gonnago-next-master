@@ -1,0 +1,10 @@
+@media screen and (min-width: 731px) {
+    .ant-drawer, .ant-drawer-left.css-dev-only-do-not-override-djtmh8.ant-drawer-open {
+      display: none;
+    }
+    html body{
+       overflow: auto !important;
+       width: 100% !important;
+    }
+  }
+  

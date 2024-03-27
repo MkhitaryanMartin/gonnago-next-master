@@ -1,0 +1,9 @@
+.barcode__input{
+    width: 465px;
+    height: 40px;
+    border-radius:72px;
+    padding: 24px;
+    border: none;
+    outline: none;
+    background-color: #F8F6FC;
+}

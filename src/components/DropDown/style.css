@@ -1,0 +1,14 @@
+.dropdown-container{
+    width: 70px;
+    text-align: center;
+}
+@media screen and (max-width:860px){
+    .dropdown-container{
+        width: 100%;
+        text-align: start;
+    }
+    .space{
+        display: flex;
+        justify-content: space-between;
+    }
+    }

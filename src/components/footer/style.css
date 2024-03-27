@@ -1,0 +1,133 @@
+.footer{
+ padding-bottom: 10px;
+}
+.footer__container{
+   border-top: 3px solid #E3E3E3;
+   border-bottom: 3px solid #E3E3E3;
+   padding: 34px 0;
+}
+
+.text-block{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 67px;
+    padding: 34px 111px 0 111px;
+}
+
+.display-flex{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.display-flex h4{
+    margin-bottom: 15px;
+    font-weight: 50px;
+    text-align: start;
+    cursor: pointer;
+     
+ }
+.display-flex p{
+   text-align: start;
+   margin: 6px 0;
+   color: #646464;
+   font-size: 14px;
+   font-weight: 400;
+    
+}
+.addres-block{
+    display: flex;
+    justify-content: space-between;
+    padding: 34px 111px 0 111px;
+}
+
+
+@media screen and (max-width:1250px) {
+  .text-block{
+    flex-direction: column;
+    padding: 0 111px;
+  }
+ 
+  /* .display-flex p{
+    display: none;
+  } */
+  
+  .display-flex p {
+    animation: hideElement 0.3s ease forwards; 
+}
+.show-text p{
+  animation: showElement 0.3s ease forwards;;
+}
+}
+@media screen and (max-width:950px) {
+    .addres-block{
+        flex-direction: column;
+        padding: 34px 10px;
+    }
+    .addres-block p{
+      margin-top: 10px;
+    }    
+}
+@media screen and (max-width:650px) {
+    .display-flex {
+        align-items: center;
+       }
+       .text-block h4, .show-text p, .display-flex p{
+        text-align: center;
+    }
+    .text-block{
+      flex-direction: column;
+      padding: 0 20px;
+    }
+    .addres-block p{
+     font-size: 14px;
+
+  }
+}
+@media screen and (max-width:400px) {
+    .text-block{
+        align-items: center;
+        padding: 34px 10px;
+        margin: 0;
+    }
+  
+}
+
+@media screen and (max-width:300px) {
+  
+   
+}
+
+@keyframes hideElement {
+  0% {
+      opacity: 1;
+      height: auto; 
+      padding: initial;
+      margin: 6px 0;
+      visibility: visible;
+  }
+  100% {
+      opacity: 0;
+      height: 0;
+      padding: 0;
+      margin: 0;
+      visibility: hidden;
+  }
+}
+
+@keyframes showElement {
+  0% {
+      opacity: 0;
+      max-height: 0; 
+      padding: 0;
+      margin: 6px 0;
+      visibility: hidden;
+  }
+  100% {
+      opacity: 1;
+      max-height: 80px; 
+      padding: initial;
+      margin: 6px 0;
+      visibility: visible;
+  }
+}
