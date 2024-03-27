@@ -48,10 +48,11 @@
 @media screen and (max-width:1048px){
     .category-child-list{
         padding: 31px 0px;
+        margin: 0 20px;
         
-
     }
     .category-child-list li{
        margin: 0 5px 30px 5px;
+
     }
 }
