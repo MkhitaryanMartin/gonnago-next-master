@@ -1,10 +1,8 @@
-// import { redirect } from 'next/navigation';
-// redirect("/en");
+import { redirect } from 'next/navigation';
+redirect("/en");
 
 function MyComponent() {
-return (
-  <></>
-)
+redirect("/armenia/entertainment")
 }
 
 export default MyComponent;
