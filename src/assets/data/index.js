@@ -14,5 +14,14 @@ export const langs = [
     },
   ];
 
+export const meta = {
+  entertainment: "entertainment, theater, cinema, concerts, sports, arts, clubs, festivals",
+  education: "education, seminars, workshops, courses, conferences",
+  business: "business, forums, networking events, expos, trade shows",
+  sports: "sports, football, volleyball, boxing, tennis, chess, basketball",
+  turizm: "tourism, tours, destinations, landmarks, attractions",
+  places: "stand-up-clubs, educationalinstitutions",
+  "all-people":"writers, scientists"
+}
 
   // ["Հայաստան", "Գյումրի", "Երևան", "Վանաձոր"]

@@ -35,7 +35,6 @@ const DropdownLang = ({
       }}
       onOpenChange={handleOpenChange}
       open={open}
-      
     >
       <div className='dropdown-container'>
         <a onClick={(e) => e.preventDefault()}>

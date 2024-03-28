@@ -1,9 +1,9 @@
 "use client"
 
-import "./style.css";
 import Barcode from "./barcode";
 import InstagramIcon from "../svg/instagram";
 import { useState } from "react";
+import "./style.css";
 
 function FooterClent() {
     const [activeIndex, setActiveIndex] = useState("");
