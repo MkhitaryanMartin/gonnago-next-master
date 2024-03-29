@@ -3,7 +3,7 @@ import StoreProvider from "./provider";
 import Header from "@/components/header/index.js";
 import Footer from "@/components/footer"
 import "./globals.css";
-import ThemeProvider from "@/hoc/ThemeProvider";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,9 +15,9 @@ export const metadata = {
 
 
 async function getCategories() {
-  const resCitiJson = await fetch(`https://api.gonnago.am/cities`, { cache: 'force-cache' })
+  const resCitiJson = await fetch(`https://api.gonnago.am/cities`)
   const resCiti = await resCitiJson.json()
-  const resJson = await fetch(`https://api.gonnago.am/categories/menu`, { cache: 'force-cache' })
+  const resJson = await fetch(`https://api.gonnago.am/categories/menu`)
   const res = await resJson.json()
   return { categories: res.data, cities: resCiti.data }
 }

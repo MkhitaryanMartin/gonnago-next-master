@@ -1,0 +1,29 @@
+.calendar{
+
+}
+.calendar li{
+  cursor: pointer;
+}
+.calendar, .days, .month{
+  display: flex;
+  align-items: center;
+}
+
+.month-name{
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+}
+.day{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  margin: 0 10px;
+  text-align: center;
+  width: 70px;
+}
+.calendar .active{
+  position: relative;
+ 
+}

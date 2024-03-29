@@ -22,7 +22,7 @@ function Head({
 }) {
 const pathname = usePathname()
   return (
-        <header className="header" >
+        <div className="header" >
             <div className="header__head-block">
                 <div className="header__logo-block">
                     <Link href={`/${activeValue.citi.toLowerCase()}/entertainment`}><Image src={logo} alt="logo"/></Link>
@@ -43,7 +43,7 @@ const pathname = usePathname()
                 </div>
                 <Menu  citiList={citiList} handleGetValue={handleGetValue} handleIsOpen={handleIsOpen}/>
             </div>
-        </header>
+        </div>
     )
 }
 

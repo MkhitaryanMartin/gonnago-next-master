@@ -37,12 +37,10 @@ const DropdownLang = ({
       open={open}
     >
       <div className='dropdown-container'>
-        <a onClick={(e) => e.preventDefault()}>
           <Space className='space'>
             {value}
             <CursorDown/>
           </Space>
-        </a>
       </div>
     </Dropdown>
   );
